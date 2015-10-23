@@ -42,6 +42,8 @@
 config/local.js
 
 
+# environment vars files
+.env
 
 
 
