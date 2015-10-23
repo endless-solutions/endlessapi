@@ -28,14 +28,14 @@ module.exports.policies = {
 
   // '*': true,
 
-  '*': ['isAuthenticated'],
+  '*': ['isLocal','isAuthenticated'],
 
   SchoolmanagementController: {
-    '*': ['isVerifiedSchool']
+    '*': ['isLocal','isVerifiedSchool']
   },
 
   AuthController: {
-    '*': true
+    '*': ['isLocal']
   },
 
   /***************************************************************************
