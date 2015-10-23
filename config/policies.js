@@ -28,6 +28,16 @@ module.exports.policies = {
 
   // '*': true,
 
+  '*': ['isAuthenticated'],
+
+  SchoolmanagementController: {
+    '*': ['isVerifiedSchool']
+  },
+
+  AuthController: {
+    '*': true
+  },
+
   /***************************************************************************
   *                                                                          *
   * Here's an example of mapping some policies to run before a controller    *
