@@ -20,7 +20,7 @@ module.exports = {
         //console.log("statusCode: ", ret.statusCode);
         //console.log("headers: ",ret.headers);
         ret.on('data',function(d){
-          res.send(d);
+          res.send({'mail':d.buyer_email});
         });
       });
       getReq.end();
